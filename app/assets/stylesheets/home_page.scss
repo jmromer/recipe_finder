@@ -2,7 +2,36 @@
   margin-top: 75px;
 }
 
-.search-form {
+.recipe-search-form {
   margin: 15px auto;
   width: 500px;
+}
+
+.recipe-search-results {
+  margin: 15px auto;
+  width: 500px;
+}
+
+.recipe-search-result {
+  margin: 10px auto;
+}
+
+.recipe-thumbnail {
+  height: 80px;
+  margin: auto;
+  width: auto;
+}
+
+.recipe-thumbnail-container {
+  height: 100px;
+  margin-right: 15px;
+  overflow: hidden;
+  width: 100px;
+}
+
+.recipe-search-link {
+  color: gray;
+  font-size: 90%;
+  font-style: italic;
+  text-decoration: underline;
 }
