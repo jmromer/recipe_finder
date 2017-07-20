@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?q=8938u98
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jul 2017 22:41:30 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '102'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Jul 2017 22:42:30 GMT
+recorded_with: VCR 3.0.3
