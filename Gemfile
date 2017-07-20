@@ -19,12 +19,14 @@ gem "sass-rails", github: "rails/sass-rails", branch: :master
 gem "sprockets", github: "rails/sprockets", branch: :master
 gem "sprockets-rails", github: "rails/sprockets-rails", branch: :master
 gem "uglifier", ">= 1.3.0"
+gem "webmock"
 
 group :development, :test do
   gem "capybara"
   gem "jazz_fingers"
   gem "poltergeist"
   gem "rspec-rails", "~> 3.5"
+  gem "vcr"
 end
 
 group :development do
