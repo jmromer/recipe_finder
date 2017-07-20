@@ -9,7 +9,7 @@
 
       <div class="media-body">
         <div class="media-heading">
-          <%= link_to recipe.title, recipe.url %>
+          <%= link_to CGI.unescapeHTML(recipe.title), recipe.url %>
         </div>
         <%= recipe.ingredients_list.map { |ingredient|
           link_to ingredient, recipes_path(query: ingredient),
