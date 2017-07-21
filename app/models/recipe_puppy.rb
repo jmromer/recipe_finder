@@ -12,7 +12,13 @@ class RecipePuppy
     end
 
     response_body = get("/", query: options).body
-    results = JSON.parse(response_body).fetch("results")
+
+    results = begin
+                JSON.parse(response_body).fetch("results")
+              rescue JSON::ParserError, KeyError => e
+                Rails.logger.info("RecipePuppy API Error: #{e}")
+                []
+              end
 
     RecipePuppyRecipe.new_collection(results)
   end

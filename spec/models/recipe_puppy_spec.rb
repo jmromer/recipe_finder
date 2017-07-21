@@ -23,5 +23,16 @@ RSpec.describe RecipePuppy, type: :model do
         end
       end
     end
+
+    context "given a missing page of results returning a 404 HTML template" do
+      it "returns an empty array" do
+        VCR.use_cassette("recipe puppy search query with missing results") do
+          recipes = described_class.search(query: "vodka", page: 2)
+
+          expect(recipes).to be_an_instance_of Array
+          expect(recipes).to be_empty
+        end
+      end
+    end
   end
 end
