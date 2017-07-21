@@ -19,6 +19,6 @@ $(() => {
     const searchTerm = $(event.target).text()
     $form.find("input").val(searchTerm)
     $(document).scrollTop(0)
-    queryForRecipes(`query=${searchTerm}`, $resultsContainer)
+    queryForRecipes(`ingredients=${searchTerm}`, $resultsContainer)
   })
 })

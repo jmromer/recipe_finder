@@ -25,6 +25,18 @@ RSpec.describe RecipePuppy, type: :model do
       end
     end
 
+    context "given an ingredient search query" do
+      it "queries the recipe puppy api for recipes containing that ingredient" do
+        VCR.use_cassette("recipe puppy api search for ingredient") do
+          recipes = described_class.search(query: "", ingredients: "olives")
+
+          expect(recipes).to be_an_instance_of Array
+          expect(recipes).to all(be_an_instance_of(RecipePuppyRecipe))
+          expect(recipes.count).to eq 10
+        end
+      end
+    end
+
     context "given no results" do
       it "returns an empty array" do
         VCR.use_cassette("recipe puppy search query with no results") do

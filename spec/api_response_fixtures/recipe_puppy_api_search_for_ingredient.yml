@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?i=olives
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 02:10:15 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=f7b82b2a0c3aff661c07caa98fe0ad10; expires=Fri, 21 Jul 2017 04:10:15
+        GMT; path=/
+      - kohanasession=f7b82b2a0c3aff661c07caa98fe0ad10; expires=Fri, 21-Jul-2017 04:10:15
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiJmN2I4MmIyYTBjM2FmZjY2MWMwN2NhYTk4ZmUwYWQxMCI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDMwMTU7;
+        expires=Fri, 21-Jul-2017 04:10:15 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '728'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Baked
+        Spanish Omelette Recipe","href":"http:\/\/www.grouprecipes.com\/36956\/baked-spanish-omelette.html","ingredients":"olives","thumbnail":"http:\/\/img.recipepuppy.com\/394961.jpg"},{"title":"Black
+        Olive Pate Recipe","href":"http:\/\/www.grouprecipes.com\/18954\/black-olive-pate.html","ingredients":"olives,
+        garlic","thumbnail":"http:\/\/img.recipepuppy.com\/354925.jpg"},{"title":"ENSALADA
+        DE FRIJOLES MEXICANOS","href":"http:\/\/www.nibbledish.com\/people\/mvbl\/recipes\/ensalada-de-frijoles-mexicanos","ingredients":"cherry
+        pepper, olives","thumbnail":"http:\/\/img.recipepuppy.com\/533353.jpg"},{"title":"Citrus
+        Olives","href":"http:\/\/find.myrecipes.com\/recipes\/recipefinder.dyn?action=displayRecipe&recipe_id=1130558","ingredients":"olives,
+        orange zest","thumbnail":"http:\/\/img.recipepuppy.com\/562649.jpg"},{"title":"Tortilla
+        Pinwheels","href":"http:\/\/allrecipes.com\/Recipe\/Tortilla-Pinwheels\/Detail.aspx","ingredients":"olives,
+        green onion, ham","thumbnail":"http:\/\/img.recipepuppy.com\/25749.jpg"},{"title":"Olive
+        Oil Uses Besides Food Recipe","href":"http:\/\/www.grouprecipes.com\/62828\/olive-oil-uses-besides-food.html","ingredients":"olive
+        oil, vegetable oil, olive oil, olives, olive oil, olive oil","thumbnail":"http:\/\/img.recipepuppy.com\/207820.jpg"},{"title":"Little
+        Olive Penguins Recipe","href":"http:\/\/www.grouprecipes.com\/69261\/little-olive-penguins.html","ingredients":"olives,
+        olives, cream cheese, pimento","thumbnail":"http:\/\/img.recipepuppy.com\/255797.jpg"},{"title":"Pineapple
+        Spread Recipe","href":"http:\/\/www.grouprecipes.com\/43015\/pineapple-spread.html","ingredients":"pineapple,
+        olives, cream cheese","thumbnail":"http:\/\/img.recipepuppy.com\/278363.jpg"},{"title":"Monster
+        Eyes","href":"http:\/\/find.myrecipes.com\/recipes\/recipefinder.dyn?action=displayRecipe&recipe_id=1830673","ingredients":"sausage,
+        cheddar cheese, olives","thumbnail":"http:\/\/img.recipepuppy.com\/522394.jpg"},{"title":"Warm
+        Rosemary Olives","href":"http:\/\/find.myrecipes.com\/recipes\/recipefinder.dyn?action=displayRecipe&recipe_id=524109","ingredients":"olives,
+        rosemary, red pepper flakes","thumbnail":"http:\/\/img.recipepuppy.com\/527701.jpg"}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 02:11:14 GMT
+recorded_with: VCR 3.0.3
