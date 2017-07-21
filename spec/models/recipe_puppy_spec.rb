@@ -35,4 +35,16 @@ RSpec.describe RecipePuppy, type: :model do
       end
     end
   end
+
+  describe ".search_for_n_entries" do
+    it "queries the recipe puppy api for recipes and parses the response" do
+      VCR.use_cassette("recipe puppy search query paginated request") do
+        recipes = described_class.query_for_n_entries(n: 15, query: "chicken")
+
+        expect(recipes).to be_an_instance_of Array
+        expect(recipes).to all(be_an_instance_of(RecipePuppyRecipe))
+        expect(recipes.count).to eq 15
+      end
+    end
+  end
 end
