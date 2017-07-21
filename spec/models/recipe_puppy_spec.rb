@@ -13,6 +13,18 @@ RSpec.describe RecipePuppy, type: :model do
       end
     end
 
+    context "given no arguments" do
+      it "returns the first page of all results" do
+        VCR.use_cassette("recipe puppy api unconstrained query") do
+          recipes = described_class.search
+
+          expect(recipes).to be_an_instance_of Array
+          expect(recipes).to all(be_an_instance_of(RecipePuppyRecipe))
+          expect(recipes.count).to eq 10
+        end
+      end
+    end
+
     context "given no results" do
       it "returns an empty array" do
         VCR.use_cassette("recipe puppy search query with no results") do

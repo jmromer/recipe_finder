@@ -4,7 +4,7 @@ class RecipePuppy
   include HTTParty
   base_uri "http://www.recipepuppy.com/api"
 
-  def self.search(query:, ingredients: nil, page: nil)
+  def self.search(query: nil, ingredients: nil, page: nil)
     options = {}.tap do |opt|
       opt[:i] = ingredients if ingredients.present?
       opt[:q] = query if query.present?
