@@ -15,4 +15,8 @@ class RecipePuppyRecipe
     self.thumbnail_url = attrs[:thumbnail].presence || DEFAULT_THUMBNAIL_URL
     self.title = attrs[:title]
   end
+
+  def default_image?
+    thumbnail_url == DEFAULT_THUMBNAIL_URL
+  end
 end

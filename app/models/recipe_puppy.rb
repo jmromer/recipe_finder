@@ -33,6 +33,7 @@ class RecipePuppy
     loop do
       page += 1
       results = search(query: query, ingredients: ingredients, page: page)
+                .reject(&:default_image?)
 
       # end loop when empty result sets are returned repeatedly
       empty_result_sets_encountered += 1 if results.empty?
