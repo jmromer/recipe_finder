@@ -1,0 +1,446 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?p=1&q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 01:55:34 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=7ae2f5fb06e7e59f19bf7c3726fd9a61; expires=Fri, 21 Jul 2017 03:55:34
+        GMT; path=/
+      - kohanasession=7ae2f5fb06e7e59f19bf7c3726fd9a61; expires=Fri, 21-Jul-2017 03:55:34
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiI3YWUyZjVmYjA2ZTdlNTlmMTliZjdjMzcyNmZkOWE2MSI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDIxMzQ7;
+        expires=Fri, 21-Jul-2017 03:55:34 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1045'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Home
+        Fried Chicken Recipe","href":"http:\/\/www.grouprecipes.com\/11241\/home-fried-chicken.html","ingredients":"milk,
+        bacon grease, flour, potato, chicken","thumbnail":"http:\/\/img.recipepuppy.com\/267093.jpg"},{"title":"Chicken
+        in a Pot Plus Stock or Dumplings","href":"http:\/\/www.recipezaar.com\/Chicken-in-a-Pot-Plus-Stock-or-Dumplings-115070","ingredients":"allspice,
+        bay leaf, carrot, celery, thyme, onions, parsley, black pepper, salt, salt,
+        water, chicken","thumbnail":""},{"title":"Tipsy Chicken","href":"http:\/\/allrecipes.com\/Recipe\/Tipsy-Chicken\/Detail.aspx","ingredients":"beer,
+        cayenne, chili powder, cumin, curry powder, garlic powder, wood chips, onion
+        powder, paprika, black pepper, salt, salt, water","thumbnail":""},{"title":"2
+        in 1 - Herbed Chicken & Leftover Chicken Salad","href":"http:\/\/www.recipezaar.com\/2-in-1-Herbed-Chicken-Leftover-Chicken-Salad-108955","ingredients":"chicken,
+        garlic, margarine, marjoram, onions, black pepper, rosemary, sage, salt, thyme","thumbnail":"http:\/\/img.recipepuppy.com\/45904.jpg"},{"title":"Beer
+        Can Chicken","href":"http:\/\/www.recipezaar.com\/Beer-Can-Chicken-312508","ingredients":"beer,
+        brown sugar, salt, seasoning, chicken","thumbnail":""},{"title":"Asian Chicken
+        Noodle Soup Recipe","href":"http:\/\/www.grouprecipes.com\/67612\/asian-chicken-noodle-soup.html","ingredients":"spinach,
+        broth, carrot, chicken, chicken broth, mint, garlic, ginger, radish, lime,
+        udon noodles, onions, hot pepper, peas, soup, lemon grass, fish sauce, vegetable
+        oil, green onion, red pepper flakes, dark sesame oil","thumbnail":"http:\/\/img.recipepuppy.com\/223405.jpg"},{"title":"Chez
+        Panisse Brine for Pork, Chicken and Turkey","href":"http:\/\/www.recipezaar.com\/Chez-Panisse-Brine-for-Pork-Chicken-and-Turkey-131506","ingredients":"allspice,
+        bay leaves, water, thyme, garlic, juniper berries, kosher salt, sugar","thumbnail":""},{"title":"Chicken
+        Breasts Stuffed With Olives and Goat Cheese","href":"http:\/\/www.recipezaar.com\/Chicken-Breasts-Stuffed-With-Olives-and-Goat-Cheese-113177","ingredients":"chicken,
+        red pepper flakes, oregano, white wine, parsley, goat cheese, garlic, kalamata
+        olive, milk, olive oil, salt","thumbnail":""},{"title":"Ask for More Chicken","href":"http:\/\/www.recipezaar.com\/Ask-for-More-Chicken-332993","ingredients":"onion
+        soup mix, carrot, celery, chicken, chutney, water, vegetable oil, mayonnaise,
+        onions, potato","thumbnail":""},{"title":"Chicken Quesadillas Homemade","href":"http:\/\/www.recipezaar.com\/Chicken-Quesadillas-Homemade-200392","ingredients":"chicken,
+        monterey jack cheese, flour tortillas, jalapeno, mozzarella cheese, onions,
+        tomato, vegetable oil","thumbnail":""}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 01:56:33 GMT
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?p=2&q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 01:55:34 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=ca0ffdf2604ac1df81e0aa109d0df562; expires=Fri, 21 Jul 2017 03:55:34
+        GMT; path=/
+      - kohanasession=ca0ffdf2604ac1df81e0aa109d0df562; expires=Fri, 21-Jul-2017 03:55:34
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiJjYTBmZmRmMjYwNGFjMWRmODFlMGFhMTA5ZDBkZjU2MiI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDIxMzQ7;
+        expires=Fri, 21-Jul-2017 03:55:34 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '986'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Citrus
+        Grilled Chicken Salad (For Leftover Grilled Chicken)","href":"http:\/\/www.recipezaar.com\/citrus-grilled-chicken-salad-for-leftover-grilled-chicken-367450","ingredients":"marmalade,
+        avocado, chicken, lettuce, flaked coconut, mayonnaise, black pepper, salt,
+        sour cream","thumbnail":""},{"title":"Ugly Naked Chicken","href":"http:\/\/www.recipezaar.com\/Ugly-Naked-Chicken-40106","ingredients":"black
+        pepper, butter, garlic powder, honey, lemon juice, salt, chicken, soy sauce,
+        worcestershire sauce","thumbnail":"http:\/\/img.recipepuppy.com\/37127.jpg"},{"title":"Really
+        Easy and Good Grilled Lime Chicken","href":"http:\/\/www.recipezaar.com\/Really-Easy-and-Good-Grilled-Lime-Chicken-129588","ingredients":"black
+        pepper, chicken, rosemary, thyme, garlic, honey, lime juice, vegetable oil","thumbnail":""},{"title":"Chicken
+        Caesar BLT Sandwich","href":"http:\/\/www.recipezaar.com\/Chicken-Caesar-BLT-Sandwich-205779","ingredients":"chicken,
+        lettuce, caesar salad dressing, bread, bacon, tomato","thumbnail":"http:\/\/img.recipepuppy.com\/39417.jpg"},{"title":"Finger-Licking
+        Chicken Marinade","href":"http:\/\/www.recipezaar.com\/Finger-Licking-Chicken-Marinade-88939","ingredients":"garlic
+        salt, lemon juice, miracle whip, vegetable oil, black pepper, salt, thyme,
+        vinegar, worcestershire sauce","thumbnail":"http:\/\/img.recipepuppy.com\/39545.jpg"},{"title":"Chicken
+        Brunswick Stew","href":"http:\/\/www.recipezaar.com\/Chicken-Brunswick-Stew-147124","ingredients":"black
+        pepper, chicken, chicken broth, corn, lima beans, hot sauce, ketchup, margarine,
+        onions, potato, red pepper flakes, salt, tomato, worcestershire sauce","thumbnail":""},{"title":"Cooked
+        Chicken for Recipes - Barefoot Contessa Style-Ina Garten","href":"http:\/\/www.recipezaar.com\/Cooked-Chicken-for-Recipes-Barefoot-Contessa-Style-Ina-Garten-234465","ingredients":"chicken,
+        olive oil, black pepper, salt","thumbnail":"http:\/\/img.recipepuppy.com\/321623.jpg"},{"title":"Barbecued
+        Chicken Burritos Recipe","href":"http:\/\/www.grouprecipes.com\/65437\/barbecued-chicken-burritos.html","ingredients":"barbecue
+        sauce, chicken, flour tortillas, green pepper, green pepper, mexican cheese
+        blend, olive oil, onions, seasoning","thumbnail":""},{"title":"Easy Tender  Chicken
+        Stock","href":"http:\/\/www.recipezaar.com\/Easy-Tender-Chicken-Stock-19592","ingredients":"butter,
+        parsley, tarragon, black pepper, marjoram, thyme, lemon, onions, salt, salt,
+        chicken, vegetable oil","thumbnail":"http:\/\/img.recipepuppy.com\/530340.jpg"},{"title":"Farrouj
+        Meshwi - Lebanese Garlic Chicken","href":"http:\/\/www.recipezaar.com\/Farrouj-Meshwi-Lebanese-Garlic-Chicken-326849","ingredients":"chicken,
+        garlic, lemon juice, olive oil, salt","thumbnail":"http:\/\/img.recipepuppy.com\/555607.jpg"}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 01:56:33 GMT
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?p=3&q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 01:55:34 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=6291e817078d77a2ee6514e8f7d80fff; expires=Fri, 21 Jul 2017 03:55:34
+        GMT; path=/
+      - kohanasession=6291e817078d77a2ee6514e8f7d80fff; expires=Fri, 21-Jul-2017 03:55:34
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiI2MjkxZTgxNzA3OGQ3N2EyZWU2NTE0ZThmN2Q4MGZmZiI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDIxMzQ7;
+        expires=Fri, 21-Jul-2017 03:55:34 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '938'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Good
+        Eats Chicken Kiev (From Alton Brown 2004)","href":"http:\/\/www.recipezaar.com\/Good-Eats-Chicken-Kiev-From-Alton-Brown-2004-327369","ingredients":"chicken,
+        parsley, tarragon, eggs, black pepper, kosher salt, panko, butter, vegetable
+        oil, water","thumbnail":"http:\/\/img.recipepuppy.com\/624797.jpg"},{"title":"Grandma''s
+        Boiled Chicken","href":"http:\/\/www.recipezaar.com\/Grandmas-Boiled-Chicken-155376","ingredients":"bay
+        leaves, carrot, celery, chicken, parsley, garlic, onions, pepper, salt","thumbnail":""},{"title":"Grilled
+        Sesame Chicken","href":"http:\/\/www.recipezaar.com\/grilled-sesame-chicken-379704","ingredients":"chicken,
+        dark sesame oil, olive oil, honey, black pepper, sesame seed, salt","thumbnail":""},{"title":"Cream
+        of Chicken Breasts","href":"http:\/\/allrecipes.com\/Recipe\/Cream-of-Chicken-Breasts\/Detail.aspx","ingredients":"chicken,
+        poultry seasoning","thumbnail":"http:\/\/img.recipepuppy.com\/1196.jpg"},{"title":"Aloha
+        Chicken","href":"http:\/\/allrecipes.com\/Recipe\/Aloha-Chicken\/Detail.aspx","ingredients":"brown
+        sugar, chicken, cider vinegar, garlic salt, ginger, ketchup, onion powder,
+        paprika, soy sauce","thumbnail":"http:\/\/img.recipepuppy.com\/13305.jpg"},{"title":"Pretty
+        Chicken Marinade","href":"http:\/\/allrecipes.com\/Recipe\/Pretty-Chicken-Marinade\/Detail.aspx","ingredients":"black
+        pepper, chicken, garlic powder, lemon juice, liquid smoke flavoring, olive
+        oil, soy sauce, dijon mustard","thumbnail":"http:\/\/img.recipepuppy.com\/17088.jpg"},{"title":"Kittencal''s
+        Easy and Delicious Ranch-Parmesan Chicken","href":"http:\/\/www.recipezaar.com\/Kittencals-Easy-and-Delicious-Ranch-Parmesan-Chicken-200296","ingredients":"chicken,
+        butter, bread crumbs, garlic powder, black pepper, parmesan cheese, ranch
+        dressing, salt","thumbnail":"http:\/\/img.recipepuppy.com\/34737.jpg"},{"title":"Baked
+        Chicken Thighs\/Leg Quarters","href":"http:\/\/www.recipezaar.com\/Baked-Chicken-ThighsLeg-Quarters-199636","ingredients":"chicken,
+        garlic powder, soy sauce","thumbnail":""},{"title":"Amazingly Simple Chicken
+        Noodle Soup","href":"http:\/\/www.recipezaar.com\/Amazingly-Simple-Chicken-Noodle-Soup-85648","ingredients":"bay
+        leaf, butter, carrot, chicken broth, chicken, egg noodles, peas, green onion,
+        salt","thumbnail":"http:\/\/img.recipepuppy.com\/59970.jpg"},{"title":"Andrea
+        Immer''s Chicken Breast With Prosciutto &amp; Sage","href":"http:\/\/www.recipezaar.com\/Andrea-Immers-Chicken-Breast-With-Prosciutto-Sage-130233","ingredients":"chicken,
+        sherry, olive oil, prosciutto, sage","thumbnail":""}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 01:56:33 GMT
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?p=4&q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 01:55:34 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=9fcc19e8c61637a2732f778c1e7fb693; expires=Fri, 21 Jul 2017 03:55:34
+        GMT; path=/
+      - kohanasession=9fcc19e8c61637a2732f778c1e7fb693; expires=Fri, 21-Jul-2017 03:55:34
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiI5ZmNjMTllOGM2MTYzN2EyNzMyZjc3OGMxZTdmYjY5MyI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDIxMzQ7;
+        expires=Fri, 21-Jul-2017 03:55:34 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1023'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Ardolino-Style
+        Chicken Soup","href":"http:\/\/www.recipezaar.com\/Ardolino-Style-Chicken-Soup-343989","ingredients":"bay
+        leaf, black pepper, carrot, celery, chicken, parsley, thyme, garlic powder,
+        tomato sauce, salt, yellow onions","thumbnail":""},{"title":"Baked Chicken","href":"http:\/\/www.recipezaar.com\/Baked-Chicken-293351","ingredients":"butter,
+        chicken broth, chicken, bay leaves, salt","thumbnail":""},{"title":"BBQ Chicken
+        Pizza","href":"http:\/\/www.recipezaar.com\/BBQ-Chicken-Pizza-144689","ingredients":"chicken,
+        brown sugar, cayenne, garlic salt, green pepper, honey, italian cheese blend,
+        salad dressing, margarine, molasses, onions, barbecue sauce, black pepper,
+        prepared pizza crust, provolone cheese, ranch dressing, salt","thumbnail":""},{"title":"Broiled
+        Chicken Deluxe","href":"http:\/\/www.recipezaar.com\/Broiled-Chicken-Deluxe-110414","ingredients":"black
+        pepper, chicken, butter, sugar, lemon, paprika, salt","thumbnail":""},{"title":"Easy
+        Easy Way To Cook Chicken Recipe","href":"http:\/\/www.grouprecipes.com\/48083\/easy-easy-way-to-cook-chicken.html","ingredients":"olive
+        oil, onions, chicken","thumbnail":""},{"title":"Caribbean - Style Chicken
+        With Tropical Salsa And Spicy Sweet Potato Sticks Recipe","href":"http:\/\/www.grouprecipes.com\/75133\/caribbean---style-chicken-with-tropical-salsa-and-spicy-sweet-potato-sticks.html","ingredients":"sweet
+        potato, cayenne, chicken, cilantro, nonstick cooking spray, jalapeno, seasoning,
+        lime juice, lime, sugar, paprika, red onions, salsa, salt, sweet potato, sweet
+        potato, vegetable oil, sweet potato","thumbnail":""},{"title":"Cola Chicken
+        Recipe","href":"http:\/\/www.grouprecipes.com\/51884\/cola-chicken.html","ingredients":"chicken,
+        cola flavored carbonated beverage, ketchup","thumbnail":"http:\/\/img.recipepuppy.com\/266722.jpg"},{"title":"Carolina
+        Crispy Buttermilk Fried Chicken","href":"http:\/\/www.recipezaar.com\/Carolina-Crispy-Buttermilk-Fried-Chicken-143976","ingredients":"flour,
+        baking powder, baking soda, buttermilk, eggs, black pepper, hot sauce, kosher
+        salt, chicken, sugar, paprika, vegetable oil, whole milk","thumbnail":"http:\/\/img.recipepuppy.com\/282925.jpg"},{"title":"French
+        Chicken in a Pot (America''s Test Kitchen)","href":"http:\/\/www.recipezaar.com\/French-Chicken-in-a-Pot-Americas-Test-Kitchen-349883","ingredients":"bay
+        leaf, celery, garlic, black pepper, kosher salt, lemon juice, olive oil, onions,
+        chicken, rosemary","thumbnail":""},{"title":"Chicken Paprika","href":"http:\/\/www.recipezaar.com\/Chicken-Paprika-270778","ingredients":"carrot,
+        celery, chicken broth, flour, garlic, vegetable oil, onions, paprika, sour
+        cream, water, white wine, chicken","thumbnail":""}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 01:56:33 GMT
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?p=5&q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 01:55:34 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=03e75071db5b70791961799e6afee66d; expires=Fri, 21 Jul 2017 03:55:34
+        GMT; path=/
+      - kohanasession=03e75071db5b70791961799e6afee66d; expires=Fri, 21-Jul-2017 03:55:34
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiIwM2U3NTA3MWRiNWI3MDc5MTk2MTc5OWU2YWZlZTY2ZCI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDIxMzQ7;
+        expires=Fri, 21-Jul-2017 03:55:34 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '984'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Chicken
+        Parmesan-Potatoes","href":"http:\/\/www.recipezaar.com\/Chicken-Parmesan-Potatoes-323396","ingredients":"potato,
+        chicken, green beans, water, milk, parmesan cheese","thumbnail":""},{"title":"Chicken
+        Pot Pie Without the Crust","href":"http:\/\/www.recipezaar.com\/Chicken-Pot-Pie-Without-the-Crust-343799","ingredients":"cream
+        of chicken soup, celery, chicken, cream, curry powder, cheddar cheese, leek,
+        parmesan cheese, vegetable, red pepper, red potatoes","thumbnail":""},{"title":"Chicken
+        Pudding","href":"http:\/\/www.recipezaar.com\/Chicken-Pudding-113039","ingredients":"butter,
+        butter, carrot, celery, chicken bouillon, eggs, milk, onions, black pepper,
+        poultry seasoning, salt, saltine crackers, flour, shortening, chicken","thumbnail":""},{"title":"Chicken
+        Salad","href":"http:\/\/www.recipezaar.com\/Chicken-Salad-213857","ingredients":"chicken,
+        cajun seasoning, celery, dill pickle, eggs, mayonnaise, onions, sweet pickle
+        relish","thumbnail":""},{"title":"Chicken Salsa Soup With Tostitos and Mozzarella
+        Cheese!","href":"http:\/\/www.recipezaar.com\/Chicken-Salsa-Soup-With-Tostitos-and-Mozzarella-Cheese-347259","ingredients":"chicken,
+        chicken broth, chili powder, corn, garlic, mozzarella cheese, onions, salsa,
+        vegetables, water","thumbnail":"http:\/\/img.recipepuppy.com\/298416.jpg"},{"title":"Chicken
+        Satay With Peanut Sauce","href":"http:\/\/www.recipezaar.com\/Chicken-Satay-With-Peanut-Sauce-127222","ingredients":"bamboo
+        skewers, chicken, cilantro, coconut milk, fish sauce, turmeric, sugar, curry
+        paste, salt","thumbnail":""},{"title":"Chicken Tequila Sunrise","href":"http:\/\/www.recipezaar.com\/Chicken-Tequila-Sunrise-319230","ingredients":"cumin,
+        oregano, cilantro, chicken, garlic, black pepper, honey, onions, orange juice,
+        salt, tequila","thumbnail":""},{"title":"Chicken Thighs in Tomato Sauce","href":"http:\/\/www.recipezaar.com\/Chicken-Thighs-in-Tomato-Sauce-156220","ingredients":"brown
+        sugar, butter, chicken, cider vinegar, tomato, red pepper flakes, thyme, garlic,
+        onions, mustard, salt, vegetable oil, worcestershire sauce","thumbnail":""},{"title":"Best
+        Lemon Chicken Recipe","href":"http:\/\/www.grouprecipes.com\/49573\/best-lemon-chicken.html","ingredients":"salt,
+        sugar, flour, chicken, cornstarch, eggs, garlic powder, ginger, lemon, lemon
+        extract, sauce, cornstarch, chicken broth, vegetable oil, vegetable oil, water,
+        water, water, white pepper, white vinegar, food coloring","thumbnail":"http:\/\/img.recipepuppy.com\/321169.jpg"},{"title":"Cornflake-Crumb
+        Oven Fried Chicken","href":"http:\/\/www.recipezaar.com\/Cornflake-Crumb-Oven-Fried-Chicken-160519","ingredients":"chicken,
+        italian dressing","thumbnail":""}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 01:56:33 GMT
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?p=6&q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jul 2017 01:55:34 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=f7fcbc6e0f75f99a317074f2fed9669e; expires=Fri, 21 Jul 2017 03:55:34
+        GMT; path=/
+      - kohanasession=f7fcbc6e0f75f99a317074f2fed9669e; expires=Fri, 21-Jul-2017 03:55:34
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiJmN2ZjYmM2ZTBmNzVmOTlhMzE3MDc0ZjJmZWQ5NjY5ZSI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA2MDIxMzQ7;
+        expires=Fri, 21-Jul-2017 03:55:34 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '829'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Crock
+        Pot Rotisserie Chicken","href":"http:\/\/www.recipezaar.com\/Crock-Pot-Rotisserie-Chicken-235763","ingredients":"chicken,
+        nonstick cooking spray, garlic, italian seasoning, olive oil, salt","thumbnail":"http:\/\/img.recipepuppy.com\/340012.jpg"},{"title":"Crusty
+        Chicken Casserole","href":"http:\/\/www.recipezaar.com\/Crusty-Chicken-Casserole-316968","ingredients":"bacon,
+        butter, celery, corn, cream of chicken soup, garlic, gruyere cheese, mushroom,
+        onions, shallot, sour cream, chicken","thumbnail":"http:\/\/img.recipepuppy.com\/342313.jpg"},{"title":"Real
+        Fried Chicken","href":"http:\/\/www.recipezaar.com\/Real-Fried-Chicken-3842","ingredients":"butter,
+        chicken, flour, black pepper, salt, shortening","thumbnail":""},{"title":"Dixie
+        Fried Chicken","href":"http:\/\/www.recipezaar.com\/Dixie-Fried-Chicken-13466","ingredients":"chicken
+        broth, vegetable oil, chicken","thumbnail":""},{"title":"Scalloped Chicken
+        Recipe","href":"http:\/\/www.grouprecipes.com\/9826\/scalloped-chicken.html","ingredients":"bread
+        crumbs, chicken broth, chicken, egg noodles, spanish paprika, sage, salt,
+        vegetable oil, butter","thumbnail":""},{"title":"Easy Chicken in a Crock Pot","href":"http:\/\/www.recipezaar.com\/Easy-Chicken-in-a-Crock-Pot-207062","ingredients":"chicken
+        broth, cornstarch, garlic powder, black pepper, chicken, salt, water","thumbnail":""},{"title":"Easy
+        Moroccan-Style Chicken Breasts","href":"http:\/\/www.recipezaar.com\/Easy-Moroccan-Style-Chicken-Breasts-132298","ingredients":"chicken,
+        cinnamon, cumin, currant, garlic, honey, vegetable oil, onions, black pepper,
+        salsa, salt, almond, water","thumbnail":"http:\/\/img.recipepuppy.com\/525040.jpg"},{"title":"Fire
+        Department Chicken","href":"http:\/\/www.recipezaar.com\/Fire-Department-Chicken-231457","ingredients":"butter,
+        cider vinegar, vegetable oil, salt, worcestershire sauce","thumbnail":""},{"title":"Five-spice
+        Shoyu Chicken","href":"http:\/\/www.recipezaar.com\/Five-spice-Shoyu-Chicken-93385","ingredients":"chinese
+        five spice powder, cilantro, cornstarch, red wine, vegetable oil, soy sauce,
+        teriyaki sauce, water, chicken","thumbnail":""},{"title":"Foil Wrapped Chicken
+        - Baked or Fried","href":"http:\/\/www.recipezaar.com\/Foil-Wrapped-Chicken-Baked-or-Fried-237059","ingredients":"chicken","thumbnail":"http:\/\/img.recipepuppy.com\/570343.jpg"}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jul 2017 01:56:34 GMT
+recorded_with: VCR 3.0.3

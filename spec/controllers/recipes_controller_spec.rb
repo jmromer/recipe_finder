@@ -14,13 +14,16 @@ RSpec.describe RecipesController, type: :controller do
 
     context "given a search query" do
       it "responds with HTTP 200 and renders results" do
-        recipe = RecipePuppyRecipe.new(title: "mango stew")
-        allow(RecipePuppy).to receive(:search).and_return([recipe])
+        results = (1..10).map do
+          RecipePuppyRecipe
+            .new(title: "mango stew", thumbnail: "example.com/image.jpg")
+        end
+        allow(RecipePuppy).to receive(:search).and_return(results)
 
         get :index, params: { query: "mango" }
 
         expect(response.body).to match(/mango stew/)
-        expect(RecipePuppy).to have_received(:search).with(query: "mango")
+        expect(RecipePuppy).to have_received(:search).twice
       end
     end
   end

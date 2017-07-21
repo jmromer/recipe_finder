@@ -3,7 +3,7 @@ require "rails_helper"
 
 RSpec.feature "Recipe Search", type: :feature do
   scenario "User can search for recipes from home page" do
-    VCR.use_cassette("recipe puppy search query with results") do
+    VCR.use_cassette("recipe puppy api search query: chicken") do
       visit root_url
 
       fill_in "query", with: "chicken"

@@ -38,7 +38,7 @@ RSpec.describe RecipePuppy, type: :model do
 
   describe ".search_for_n_entries" do
     it "queries the recipe puppy api for recipes and parses the response" do
-      VCR.use_cassette("recipe puppy search query paginated request") do
+      VCR.use_cassette("recipe puppy api search query: chicken") do
         recipes = described_class.query_for_n_entries(n: 15, query: "chicken")
 
         expect(recipes).to be_an_instance_of Array

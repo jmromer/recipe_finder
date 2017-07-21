@@ -2,7 +2,7 @@
 
 class RecipesController < ApplicationController
   def index
-    recipes = RecipePuppy.search(query: params[:query])
+    recipes = RecipePuppy.query_for_n_entries(n: 20, query: params[:query])
     render :index, locals: { recipes: recipes }, layout: false
   end
 end
