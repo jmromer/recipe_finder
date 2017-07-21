@@ -1,0 +1,21 @@
+<% recipes.each do |recipe| %>
+  <div class="recipe-search-result">
+    <div class="media">
+      <div class="media-left recipe-thumbnail-container">
+        <img alt="<%= recipe.title %>"
+             src="<%= recipe.thumbnail_url %>"
+             class="media-object recipe-thumbnail">
+      </div>
+
+      <div class="media-body">
+        <div class="media-heading">
+          <%= link_to CGI.unescapeHTML(recipe.title), recipe.url %>
+        </div>
+        <%= recipe.ingredients_list.map { |ingredient|
+          link_to ingredient, recipes_path(query: ingredient),
+                  class: "js-search-link recipe-search-link"
+          }.join(" ").html_safe %>
+      </div>
+    </div>
+  </div>
+<% end %>

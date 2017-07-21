@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.recipepuppy.com/api/?q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jul 2017 22:28:03 GMT
+      Server:
+      - Apache/2.2.9 (Ubuntu) PHP/5.2.6-2ubuntu4.6 with Suhosin-Patch mod_ssl/2.2.9
+        OpenSSL/0.9.8g mod_wsgi/4.5.7 Python/2.6
+      X-Powered-By:
+      - PHP/5.2.6-2ubuntu4.6
+      Set-Cookie:
+      - kohanasession=f62c4ee8b7e23b83a28a517e63831548; expires=Fri, 21 Jul 2017 00:28:03
+        GMT; path=/
+      - kohanasession=f62c4ee8b7e23b83a28a517e63831548; expires=Fri, 21-Jul-2017 00:28:03
+        GMT; path=/
+      - kohanasession_data=c2Vzc2lvbl9pZHxzOjMyOiJmNjJjNGVlOGI3ZTIzYjgzYTI4YTUxN2U2MzgzMTU0OCI7dG90YWxfaGl0c3xpOjE7X2tmX2ZsYXNoX3xhOjA6e311c2VyX2FnZW50fHM6NDoiUnVieSI7aXBfYWRkcmVzc3xzOjE0OiI2OS4yMDEuMTc4LjE1MiI7bGFzdF9hY3Rpdml0eXxpOjE1MDA1ODk2ODM7;
+        expires=Fri, 21-Jul-2017 00:28:03 GMT; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1045'
+      Content-Type:
+      - text/javascript
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":[{"title":"Home
+        Fried Chicken Recipe","href":"http:\/\/www.grouprecipes.com\/11241\/home-fried-chicken.html","ingredients":"milk,
+        bacon grease, flour, potato, chicken","thumbnail":"http:\/\/img.recipepuppy.com\/267093.jpg"},{"title":"Chicken
+        in a Pot Plus Stock or Dumplings","href":"http:\/\/www.recipezaar.com\/Chicken-in-a-Pot-Plus-Stock-or-Dumplings-115070","ingredients":"allspice,
+        bay leaf, carrot, celery, thyme, onions, parsley, black pepper, salt, salt,
+        water, chicken","thumbnail":""},{"title":"Tipsy Chicken","href":"http:\/\/allrecipes.com\/Recipe\/Tipsy-Chicken\/Detail.aspx","ingredients":"beer,
+        cayenne, chili powder, cumin, curry powder, garlic powder, wood chips, onion
+        powder, paprika, black pepper, salt, salt, water","thumbnail":""},{"title":"2
+        in 1 - Herbed Chicken & Leftover Chicken Salad","href":"http:\/\/www.recipezaar.com\/2-in-1-Herbed-Chicken-Leftover-Chicken-Salad-108955","ingredients":"chicken,
+        garlic, margarine, marjoram, onions, black pepper, rosemary, sage, salt, thyme","thumbnail":"http:\/\/img.recipepuppy.com\/45904.jpg"},{"title":"Beer
+        Can Chicken","href":"http:\/\/www.recipezaar.com\/Beer-Can-Chicken-312508","ingredients":"beer,
+        brown sugar, salt, seasoning, chicken","thumbnail":""},{"title":"Asian Chicken
+        Noodle Soup Recipe","href":"http:\/\/www.grouprecipes.com\/67612\/asian-chicken-noodle-soup.html","ingredients":"spinach,
+        broth, carrot, chicken, chicken broth, mint, garlic, ginger, radish, lime,
+        udon noodles, onions, hot pepper, peas, soup, lemon grass, fish sauce, vegetable
+        oil, green onion, red pepper flakes, dark sesame oil","thumbnail":"http:\/\/img.recipepuppy.com\/223405.jpg"},{"title":"Chez
+        Panisse Brine for Pork, Chicken and Turkey","href":"http:\/\/www.recipezaar.com\/Chez-Panisse-Brine-for-Pork-Chicken-and-Turkey-131506","ingredients":"allspice,
+        bay leaves, water, thyme, garlic, juniper berries, kosher salt, sugar","thumbnail":""},{"title":"Chicken
+        Breasts Stuffed With Olives and Goat Cheese","href":"http:\/\/www.recipezaar.com\/Chicken-Breasts-Stuffed-With-Olives-and-Goat-Cheese-113177","ingredients":"chicken,
+        red pepper flakes, oregano, white wine, parsley, goat cheese, garlic, kalamata
+        olive, milk, olive oil, salt","thumbnail":""},{"title":"Ask for More Chicken","href":"http:\/\/www.recipezaar.com\/Ask-for-More-Chicken-332993","ingredients":"onion
+        soup mix, carrot, celery, chicken, chutney, water, vegetable oil, mayonnaise,
+        onions, potato","thumbnail":""},{"title":"Chicken Quesadillas Homemade","href":"http:\/\/www.recipezaar.com\/Chicken-Quesadillas-Homemade-200392","ingredients":"chicken,
+        monterey jack cheese, flour tortillas, jalapeno, mozzarella cheese, onions,
+        tomato, vegetable oil","thumbnail":""}]}'
+    http_version: 
+  recorded_at: Thu, 20 Jul 2017 22:29:03 GMT
+recorded_with: VCR 3.0.3

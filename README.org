@@ -1,0 +1,109 @@
+* recipe finder
+
+[[https://circleci.com/gh/jkrmr/recipe_finder][https://circleci.com/gh/jkrmr/recipe_finder.svg?style=svg]]
+
+A client web app for the [[http://www.recipepuppy.com/][Recipe Puppy API]].
+
+Queries the API for the given search term, displaying the first 20 results found
+with complete data (in particular: including a thumbnail image url).
+
+** Demo
+ [[https://user-images.githubusercontent.com/4433943/28446489-06203b9a-6d99-11e7-8c5a-aad9cf927521.gif]]
+
+** Libraries
+   - [[https://github.com/vcr/vcr][VCR]] and [[https://github.com/bblimke/webmock][WebMock]] for stubbing out API calls.
+   - [[https://github.com/teamcapybara/capybara][Capybara]] and [[https://github.com/teampoltergeist/poltergeist][Poltergeist]] for BDD and headless UI testing
+   - [[https://github.com/rspec/rspec][RSpec]] for testing
+   - [[https://github.com/jnunemaker/httparty][HTTParty]] for API calls
+   - [[https://github.com/babel/ruby-babel-transpiler][Ruby Babel]] to make ES2015 available via the asset pipeline
+
+** Request handling
+
+*** Route
+
+  #+BEGIN_SRC ruby
+  # config/routes.rb L4-L5 (37302a48)
+
+    resources :recipes, only: %i(index)
+    root to: "static_pages#home"
+  #+END_SRC
+  [[https://github.com/jkrmr/recipe_finder/blob/37302a48/config/routes.rb#L4-L5][config/routes.rb#L4-L5 (37302a48)]]
+
+*** Controller
+
+  #+BEGIN_SRC ruby
+  # app/controllers/recipes_controller.rb L4-L11 (37302a48)
+
+    def index
+      recipes = RecipePuppy
+                .query_for_n_entries(n: 20,
+                                     query: params[:query],
+                                     ingredients: params[:ingredients])
+
+      render :index, locals: { recipes: recipes }, layout: false
+    end
+  #+END_SRC
+  [[https://github.com/jkrmr/recipe_finder/blob/37302a48/app/controllers/recipes_controller.rb#L4-L11][app/controllers/recipes_controller.rb#L4-L11 (37302a48)]]
+
+*** Models
+**** ~RecipePuppy~: API facade
+    #+BEGIN_SRC ruby
+    # app/models/recipe_puppy.rb L3-L5 (37302a48)
+
+    class RecipePuppy
+      include HTTParty
+      base_uri "http://www.recipepuppy.com/api"
+    #+END_SRC
+    [[https://github.com/jkrmr/recipe_finder/blob/37302a48/app/models/recipe_puppy.rb#L3-L5][app/models/recipe_puppy.rb#L3-L5 (37302a48)]]
+
+**** ~RecipePuppyRecipe~ API result model
+
+    #+BEGIN_SRC ruby
+    # app/models/recipe_puppy_recipe.rb L3-L17 (888583e0)
+
+    class RecipePuppyRecipe
+      DEFAULT_THUMBNAIL_URL = "http://img.recipepuppy.com/9.jpg"
+
+      attr_accessor :ingredients_list, :url, :title, :thumbnail_url
+
+      def self.new_collection(attrs_list)
+        attrs_list.map { |attrs| new(attrs.with_indifferent_access) }
+      end
+
+      def initialize(attrs)
+        self.ingredients_list = (attrs[:ingredients] || "").split(/,\s?/).uniq
+        self.url = attrs[:href]
+        self.thumbnail_url = attrs[:thumbnail].presence || DEFAULT_THUMBNAIL_URL
+        self.title = attrs[:title]
+      end
+    #+END_SRC
+    [[https://github.com/jkrmr/recipe_finder/blob/888583e0/app/models/recipe_puppy_recipe.rb#L3-L17][app/models/recipe_puppy_recipe.rb#L3-L17 (888583e0)]]
+
+** Client
+
+   Client-side code listens for form submissions and for click events emitted
+   from ingredient links:
+
+   #+BEGIN_SRC js
+   // app/assets/javascripts/recipe_search.js.es6 L7-L24 (37302a48)
+
+   $(() => {
+     const $form = $(".js-search-form").first()
+     const $resultsContainer = $(".js-search-results").first()
+
+     $form.on("submit", (event) => {
+       event.preventDefault()
+       const queryParams = $(event.target).serialize()
+       queryForRecipes(queryParams, $resultsContainer)
+     })
+
+     $resultsContainer.on("click", ".js-search-link", (event) => {
+       event.preventDefault()
+       const searchTerm = $(event.target).text()
+       $form.find("input").val(searchTerm)
+       $(document).scrollTop(0)
+       queryForRecipes(`ingredients=${searchTerm}`, $resultsContainer)
+     })
+   })
+   #+END_SRC
+   [[https://github.com/jkrmr/recipe_finder/blob/37302a48/app/assets/javascripts/recipe_search.js.es6#L7-L24][app/assets/javascripts/recipe_search.js.es6#L7-L24 (37302a48)]]

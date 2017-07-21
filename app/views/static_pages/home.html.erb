@@ -1,1 +1,35 @@
-<h1>hello</h1>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="text-center">Find some heckin recipes</h1>
+  </div>
+</div>
+
+<div class="row">
+  <form class="recipe-search-form js-search-form"
+        action="<%= recipes_url %>"
+        method="get">
+    <div class="form-group">
+      <div class="input-group">
+        <input class="form-control"
+               type="text"
+               name="query"
+               placeholder="What's for dinner?..."
+               value=""
+               required />
+
+        <span class="input-group-btn">
+          <button class="btn btn-success" type="submit">
+            <i class="glyphicon glyphicon-search"
+               aria-hidden="true"></i>
+            Search
+          </button>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="row">
+  <div class="js-search-results recipe-search-results">
+  </div>
+</div>

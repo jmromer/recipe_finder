@@ -9,6 +9,7 @@ end
 
 gem "babel-transpiler"
 gem "bootstrap", github: "twbs/bootstrap-rubygem"
+gem "httparty"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "pg", "~> 0.18"
@@ -18,12 +19,14 @@ gem "sass-rails", github: "rails/sass-rails", branch: :master
 gem "sprockets", github: "rails/sprockets", branch: :master
 gem "sprockets-rails", github: "rails/sprockets-rails", branch: :master
 gem "uglifier", ">= 1.3.0"
+gem "webmock"
 
 group :development, :test do
   gem "capybara"
   gem "jazz_fingers"
   gem "poltergeist"
   gem "rspec-rails", "~> 3.5"
+  gem "vcr"
 end
 
 group :development do
@@ -34,6 +37,3 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
